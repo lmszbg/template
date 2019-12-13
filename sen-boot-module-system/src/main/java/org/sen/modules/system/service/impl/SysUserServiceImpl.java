@@ -74,7 +74,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         Set<String> roleSet = new HashSet<>();
         sysUserRoleList.stream().forEach(sysUserRole -> {
             SysRole sysRole = sysRoleMapper.selectById(sysUserRole.getRoleId());
-            roleSet.add(sysRole.getRoleCode());
+            roleSet.add(sysRole.getRoleName());
         });
         return roleSet;
     }

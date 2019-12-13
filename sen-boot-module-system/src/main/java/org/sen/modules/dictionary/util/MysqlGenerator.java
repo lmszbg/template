@@ -61,7 +61,7 @@
 //
 //        // 数据源配置
 //        DataSourceConfig dsc = new DataSourceConfig();
-//        dsc.setUrl("jdbc:mysql://localhost:3306/template?characterEncoding=UTF-8&useUnicode=true&useSSL=false");
+//        dsc.setUrl("jdbc:mysql://114.55.102.222:33006/template?characterEncoding=UTF-8&useUnicode=true&useSSL=false");
 //        // dsc.setSchemaName("public");
 //        dsc.setDriverName("com.mysql.jdbc.Driver");
 //        dsc.setUsername("root");
@@ -106,7 +106,7 @@
 //
 //        strategy.setEntityLombokModel(true);
 ////        strategy.setInclude(scanner("conlin_collection"));
-//        strategy.setInclude("test");
+//        strategy.setInclude("sys_dictionary");
 ////        strategy.setInclude("ut_agreement", "ut_app", "ut_appdetail", "ut_applink", "ut_applog", "ut_apporder", "ut_billdetail_channel", "ut_billdetail_hospital", "ut_clearresult", "ut_developers", "ut_params", "ut_privileges", "ut_reconcileresult", "ut_recontemp", "ut_systemlogs", "ut_userroles", "ut_users");
 ////        strategy.setSuperEntityColumns("Id","AddDate","ModDate");
 //        strategy.setControllerMappingHyphenStyle(true);

@@ -4,21 +4,15 @@ package org.sen.modules.dictionary.controller;
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import net.bytebuddy.asm.Advice;
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
-import org.apache.shiro.subject.Subject;
 import org.sen.common.Enum.ResultEnum;
 import org.sen.common.api.vo.Result;
 import org.sen.common.constant.CommonConstant;
 import org.sen.common.util.JwtUtil;
 import org.sen.common.util.PasswordUtil;
 import org.sen.common.util.RedisUtil;
-import org.sen.modules.dictionary.entity.Test;
-import org.sen.modules.dictionary.mapper.TestMapper;
-import org.sen.modules.dictionary.service.ITestService;
-import org.sen.modules.shiro.authc.JwtToken;
+import org.sen.modules.dictionary.aop.annotation.RequestAopLog;
 import org.sen.modules.system.entity.SysUser;
 import org.sen.modules.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,11 +64,9 @@ public class TestController {
         return  result;
     }
 
-    @PostMapping("test")
-    @RequiresRoles("admin")
-    @RequiresPermissions("/dictionary/test/test")
+    @GetMapping("test")
+    @RequestAopLog
     public String test(){
-
         return "test";
     }
 }

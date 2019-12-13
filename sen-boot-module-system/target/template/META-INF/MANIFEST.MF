@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.1
+Built-By: lmszb
+Build-Jdk: 11.0.4
+Implementation-Title: sen-boot-module-system
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: org.senframework.boot
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/sen-boot-parent/sen-boot-module-system
+Main-Class: org.springframework.boot.loader.PropertiesLauncher
+Start-Class: org.sen.SenApplication
+Spring-Boot-Version: 2.1.3.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+
