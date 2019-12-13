@@ -1,8 +1,0 @@
-swagger:
-  production: false
-  basic:
-    enable: false
-    username: admin
-    password: 123456
-
-
