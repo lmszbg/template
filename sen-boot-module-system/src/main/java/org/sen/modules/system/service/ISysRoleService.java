@@ -15,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface ISysRoleService extends IService<SysRole> {
 
     Result addNewRole(SysRole sysRole);
+
+    Result getRoleList();
 }

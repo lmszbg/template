@@ -10,6 +10,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务实现类
@@ -36,5 +38,11 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> impl
         }
         sysRoleMapper.insert(sysRole);
         return Result.ok(sysRole);
+    }
+
+    @Override
+    public Result getRoleList(){
+        List<SysRole> list = sysRoleMapper.selectList(new LambdaQueryWrapper<SysRole>());
+        return Result.ok(list);
     }
 }

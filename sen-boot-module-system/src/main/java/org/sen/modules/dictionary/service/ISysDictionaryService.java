@@ -15,4 +15,16 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface ISysDictionaryService extends IService<SysDictionary> {
 
     Result addDiction(SysDictionary sysDictionary);
+
+    Result getDictionaryList(String groupId);
+
+    Result getOneDictionaryByCodeAndGroup(String code, String group);
+
+    Result getOneDictionaryById(String id);
+
+    Result updateDictionary(SysDictionary sysDictionary);
+
+    Result deleteOneDictionaryByCodeAndGroup(String code, String group);
+
+    Result deleteOneDictionaryById(String id);
 }

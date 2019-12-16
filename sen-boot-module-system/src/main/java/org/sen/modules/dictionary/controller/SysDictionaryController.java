@@ -58,4 +58,10 @@ public class SysDictionaryController {
         }});
         return result;
     }
+
+    public static void main(String[] args){
+        String a =
+                "{\"TransId\":\"123456789012344230\",\"TransTime\":\"2019-11-26 14:51:00\",\"TransOper\":\"DBA\",\"OrgsCode\":\"00050\",\"OrgsName\":\"\",\"TransNo\":\"T01\",\"TransData\":{\"CardType\":\"01\"}}";
+        System.out.println(a);
+    }
 }
