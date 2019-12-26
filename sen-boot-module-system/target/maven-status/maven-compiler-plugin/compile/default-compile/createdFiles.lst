@@ -1,6 +1,5 @@
 org\sen\modules\system\entity\SysPermission.class
 org\sen\modules\system\mapper\SysUserRoleMapper.class
-org\sen\modules\dictionary\entity\Test.class
 org\sen\modules\system\entity\SysRolePermission.class
 org\sen\config\MybatisPlusConfig.class
 org\sen\modules\dictionary\aop\LogAspect.class
@@ -13,12 +12,10 @@ org\sen\modules\system\mapper\SysPermissionMapper.class
 org\sen\modules\system\util\MysqlGenerator$2.class
 org\sen\modules\system\mapper\SysUserMapper.class
 org\sen\config\mybatis\MybatisInterceptor.class
-org\sen\modules\dictionary\mapper\TestMapper.class
 org\sen\modules\system\entity\SysUserRole.class
 org\sen\SenApplication.class
 org\sen\modules\system\service\ISysRoleService.class
 org\sen\modules\system\controller\SysRolePermissionController.class
-org\sen\modules\dictionary\controller\TestController.class
 org\sen\modules\shiro\authc\aop\JwtFilter.class
 org\sen\modules\shiro\vo\UserBean.class
 org\sen\modules\system\service\impl\SysPermissionServiceImpl.class
@@ -28,12 +25,10 @@ org\sen\modules\shiro\authc\JwtToken.class
 org\sen\modules\shiro\vo\DefContants.class
 org\sen\modules\system\service\ISysUserService.class
 org\sen\modules\system\util\MysqlGenerator.class
-org\sen\modules\dictionary\service\ITestService.class
 org\sen\modules\system\service\impl\SysUserRoleServiceImpl.class
 org\sen\modules\system\service\impl\SysUserServiceImpl.class
 org\sen\modules\system\entity\SysUser.class
 org\sen\config\ShiroConfig.class
-org\sen\modules\dictionary\service\impl\TestServiceImpl.class
 org\sen\modules\shiro\authc\ShiroRealm.class
 org\sen\modules\shiro\authc\aop\ResourceCheckFilter.class
 org\sen\modules\system\service\ISysUserRoleService.class

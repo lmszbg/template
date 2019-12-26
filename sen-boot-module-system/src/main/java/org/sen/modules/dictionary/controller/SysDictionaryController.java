@@ -9,12 +9,9 @@ import org.sen.modules.dictionary.entity.SysDictionary;
 import org.sen.modules.dictionary.model.DictionaryModel;
 import org.sen.modules.dictionary.service.ISysDictionaryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 import java.time.LocalDateTime;
@@ -31,6 +28,7 @@ import java.time.LocalDateTime;
 @RequestMapping("/dictionary")
 @Api("字典")
 @AllArgsConstructor
+@CrossOrigin
 public class SysDictionaryController {
 
     @Autowired
@@ -59,9 +57,5 @@ public class SysDictionaryController {
         return result;
     }
 
-    public static void main(String[] args){
-        String a =
-                "{\"TransId\":\"123456789012344230\",\"TransTime\":\"2019-11-26 14:51:00\",\"TransOper\":\"DBA\",\"OrgsCode\":\"00050\",\"OrgsName\":\"\",\"TransNo\":\"T01\",\"TransData\":{\"CardType\":\"01\"}}";
-        System.out.println(a);
-    }
+
 }

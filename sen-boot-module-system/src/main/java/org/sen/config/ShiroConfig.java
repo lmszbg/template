@@ -1,6 +1,5 @@
 package org.sen.config;
 
-import com.alibaba.nacos.api.config.annotation.NacosValue;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
 import org.apache.shiro.mgt.DefaultSubjectDAO;
@@ -66,8 +65,10 @@ public class ShiroConfig {
 				filterChainDefinitionMap.put(url,"anon");
 			}
 		}
-		filterChainDefinitionMap.put("/dictionary/test/test","anon");
-		filterChainDefinitionMap.put("/dictionary/test/login", "anon");
+		filterChainDefinitionMap.put("/sys/user/test","anon");
+		filterChainDefinitionMap.put("/sys/user/test1","anon");
+		filterChainDefinitionMap.put("/sys/user/test2","anon");
+		filterChainDefinitionMap.put("/sys/user/login", "anon");
 		filterChainDefinitionMap.put("/generic/**", "anon");//pdf预览需要文件
 		filterChainDefinitionMap.put("/", "anon");
 		filterChainDefinitionMap.put("/doc.html", "anon");

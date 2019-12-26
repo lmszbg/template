@@ -5,8 +5,6 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.google.common.base.Joiner;
-import org.apache.shiro.SecurityUtils;
 import org.sen.common.exception.SenBootException;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,13 +1,11 @@
 package org.sen.common.api.vo;
 
-import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import org.sen.common.Enum.ResultEnum;
 
 import java.io.Serializable;
 
 @Data
-@ApiModel(value = "接口返回对象", description = "接口返回对象")
 public class Result<T> implements Serializable {
 
     private static final long serialVersionUID = 1L;
